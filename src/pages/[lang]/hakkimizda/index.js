@@ -8,7 +8,7 @@ const Hakkimizda = () => {
     return (
         <Layout>
         <div>
-        <h1>Hakkimizda</h1>
+        <h1>Hakkimizdaindex</h1>
         </div>
         </Layout>
     )

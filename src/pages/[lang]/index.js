@@ -3,19 +3,19 @@ import 'twin.macro'
 import Link from '../../components/link'
 import Layout from '../../components/layout'
 import { getAllLanguageSlugs, getLanguage } from '../../i18n'
+import { useEffect, useState } from 'react'
 
 export default function LangIndex({ language }) {
   const { t } = i18next
-
+  const [currentDate, setCurrentDate] = useState(0);
+setInterval(() => {
+  setCurrentDate(currentDate+1);
+}, 1000);
   return (
     <Layout>
-      <h2 tw="mt-5 mb-5 font-bold text-2xl">index.js</h2>
-      <div>
-        {t('language')}: {t(language)} ({language})
-      </div>
-      <Link href="/test">
-        <a>/{language}/test</a>
-      </Link>
+ <p className="eric-johnson">
+  {currentDate.toString()}
+ </p>
     </Layout>
   )
 }

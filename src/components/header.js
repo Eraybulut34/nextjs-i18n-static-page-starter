@@ -4,20 +4,15 @@ import i18next from 'i18next'
 import 'twin.macro'
 import Link from './link'
 import LanguageMenu from './languageMenu'
-import Header from './header'
-import Footer from './footer'
 
-const Layout = function ({ children }) {
+const Header = function ({ children }) {
   const router = useRouter()
   const { t } = i18next
 
   return (
     <>
-    <Header></Header>
-      <LanguageMenu />
-      <main>{children}</main>
-      <Footer></Footer>
+<p className='font-class'>    Burası Header</p>
     </>
   )
 }
-export default Layout
+export default Header
