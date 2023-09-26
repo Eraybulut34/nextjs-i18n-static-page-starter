@@ -13,7 +13,7 @@ const Footer = function ({ children }) {
     <>
     <footer className="footer">
         <div className="footer-top">
-            <a href="" class="logo">
+            <a href="" className="logo">
                 bimodel.net
             </a>
             <div className="footer-menu">
@@ -155,17 +155,17 @@ const Footer = function ({ children }) {
             <ul className="footer-social">
                 <li>
                     <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i className="fa-brands fa-twitter"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i className="fa-brands fa-facebook-f"></i>
                     </a>
                 </li>
             </ul>
