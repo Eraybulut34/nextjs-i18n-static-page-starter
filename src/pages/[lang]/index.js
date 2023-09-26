@@ -7,15 +7,17 @@ import { useEffect, useState } from 'react'
 
 
 
+
+
 export default function LangIndex({ language }) {
   const { t } = i18next
   return (
   <Layout>
     <div className="container">
       <div className="banner-box">
-          <h1>Our values and  purpose</h1>
-          <p>As a global sustainable development consultancy, our work is focused on producing safe, inclusive and resilient communities, infrastructure and cities. We recognise that sustainable development encompasses many different factors. So, our work also prioritises environmental regeneration, biodiversity, conservation of resources, stable economic growth and social value.</p>
-          <a href="#" className="btn">Projects</a>
+          <h1>{t('ourValuesAndPurpose')}</h1>
+          <p>{t('ourVision')}</p>
+          <a href="#" className="btn">{t('project')}</a>
       </div>
       <div className="banner-box banner-image">
         <a href="">
@@ -25,6 +27,9 @@ export default function LangIndex({ language }) {
     </div>
 
     <div className="cont">
+      <div className="inner">
+          <h3>{t('ready')}</h3>
+        </div>
       <div className="section1">
         <div className="lang">
           <a href="#">
@@ -44,11 +49,10 @@ export default function LangIndex({ language }) {
             <span className="title">Design Automation</span>
           </a>
         </div>
-        <div className="inner">
-          <h3>Our Services</h3>
-          <a href="#" className="btn">Get Information</a>
-        </div>
       </div>
+      <div className="get">
+        <a href="#" className="btn">{t('get')}</a>
+        </div>
     </div>
   </Layout>
   )

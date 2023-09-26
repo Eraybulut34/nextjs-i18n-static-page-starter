@@ -6,3 +6,4 @@ export const defaultLanguage = 'en'
 export const namespaces = ['common', 'meta', 'error']
 
 export const defaultNamespace = 'common'
+

@@ -14,10 +14,11 @@ const Header = function ({ children }) {
     <div className="header">
       <p><a href="#">bimodel.net</a></p>
       <ul>
-        <li><a href="#">Anasayfa</a></li>
-        <li><a href="#">Hakkımızda</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="#">{t('home')}</a></li>
+        <li><a href="#">{t('about')}</a></li>
+        <li><a href="#">{t('contact')}</a></li>
       </ul>
+      <LanguageMenu />
     </div>
     </>
   )

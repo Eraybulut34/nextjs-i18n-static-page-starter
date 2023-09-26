@@ -14,7 +14,6 @@ const Layout = function ({ children }) {
   return (
     <>
     <Header></Header>
-      <LanguageMenu />
       <main>{children}</main>
       <Footer></Footer>
     </>
