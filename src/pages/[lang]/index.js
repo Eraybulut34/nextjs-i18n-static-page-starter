@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 
 
 
+
 export default function LangIndex({ language }) {
   const { t } = i18next
   return (
