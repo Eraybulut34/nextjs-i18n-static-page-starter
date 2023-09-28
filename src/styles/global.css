@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  background-color: #000000;
+  background: linear-gradient(170deg, #212A39, #181E28);
   color: #fff;
   padding: 20px;
   display: flex;
