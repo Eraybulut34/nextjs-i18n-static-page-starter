@@ -337,9 +337,10 @@ ul li a:hover {
 .box {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
-  width: 80%;
-  margin-left: 200px;
+  width: 100%;
 }
 
 .create {
@@ -349,8 +350,10 @@ ul li a:hover {
 }
 
 .boxes {
-  margin-right: 40px;
-  
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .boxes h1 {
@@ -365,30 +368,34 @@ ul li a:hover {
 }
 
 .boxes.one {
-  
+  width: 500px;
 }
 
+
+
 .boxes.two {
-  margin-left: 30px;
+  width: 500px;
+  
 }
 
 
 .boxes.three {
-  margin-left: 30px;
+  width: 500px;
+ 
 }
 
 .boxes.four {
-  margin-top: 60px;
+  width: 500px;
+  
 }
 
 .boxes.five {
-  margin-left: 30px;
-  margin-top: 60px;
+  width: 500px;
 }
 
 .boxes.six {
-  margin-left: 70px;
-  margin-top: 60px;
+  width: 500px;
+  
 }
 
 
