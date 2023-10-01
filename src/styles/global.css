@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid  #0FD0AE;
+  /*border-bottom: 1px solid  #0FD0AE;*/
 }
 
 .header p a {
@@ -65,6 +65,7 @@ body {
 
 .header ul li a:hover {
   color: #4779ce;
+  border-bottom:1px solid #0FD0AE;
 }
 
 .btn {
@@ -297,7 +298,10 @@ ul li a:hover {
 }
 
 .about-us {
-  background: linear-gradient(170deg, #212A39, #181E28);
+  /*background-image: url(https://media.istockphoto.com/id/1300995605/tr/foto%C4%9Fraf/soyut-alrchitectural-%C3%A7izimler.jpg?s=2048x2048&w=is&k=20&c=RfAzjuu8pSgTPLJ93Kq3HZR4NCRQz1GnW-_RkHa6B58=);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background: linear-gradient(170deg, #212A39, #181E28);;
   padding: 10px;
   height: 70vh;
   width: 100%;
@@ -311,6 +315,7 @@ ul li a:hover {
 .intro {
   font-size: 2.5rem;
   color: #fff;
+  font-weight: bold;
 }
 
 .description {
@@ -396,6 +401,156 @@ ul li a:hover {
 .boxes.six {
   width: 500px;
   
+}
+
+input:focus {
+  outline: none;
+}
+
+svg {
+  margin: auto;
+  color: #0b5f4f;
+}
+
+.contact {
+  height: 80vh;
+  width: 100%;
+  background: #f4f7f9;
+  border-radius: 6px;
+  padding: 30px 60px 40px 40px;
+}
+
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .contact-us .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;   
+}
+
+.contact-us .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #afafb6;
+}
+
+.contact-us .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.contact-us .left-side .details a {
+  font-size: 20px;
+  color: #10182F;
+  margin-bottom: 10px;
+}
+
+.contact-us .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-us .left-side .details .text-one, .content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.contact .contact-us .right-side {
+  width: 75%;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+
+.contact-us .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #10182F;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 80%;
+  margin: 12px 0;
+}
+
+.right-side  .input-box input,.right-side  .input-box textarea {
+  height: 100%;
+  width: 80%;
+  border: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 4px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+  margin-top: 6px;
+}
+
+.right-side .button {
+  margin-top: 6px;
+}
+
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  background-color: #10182F;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: 300ms;
+  border: none;
+}
+
+.button input[type="button"]:hover {
+  background: #0b5f4f;
+}
+
+@media (max-width:950px ) {
+  .container {
+      width: 90%;
+      padding: 30px 35px 40px 35px;
+  }
+}
+
+@media (max-width:820px ) {
+  .container {
+      margin: 40px 0;
+      height: 100%;
+  }
+  .container .content {
+      flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+      width: 100%;
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+      display: none;
+  }
+  .container .content .right-side {
+      width: 100%;
+      margin-left: 0;
+  }
 }
 
 
