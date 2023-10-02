@@ -15,7 +15,7 @@ const Hakkimizda = () => {
             <div className="contact-us">
             <div className="left-side">
                 <div className="address details">
-                    <a href="https://www.google.com/maps?ll=38.461818,27.206661&z=13&t=m&hl=tr-TR&gl=US&mapclient=embed&q=Mustafa+Kemal+Cd.+No:93+Kaz%C4%B1mdirik+35100+Bornova/%C4%B0zmir" target="_blank">
+                    <a href="https://www.google.com/maps?ll=38.461818,27.206661&z=13&t=m&hl=tr-TR&gl=US&mapclient=embed&q=Mustafa+Kemal+Cd.+No:93+Kaz%C4%B1mdirik+35100+Bornova/%C4%B0zmir">
                         <div className="topic">{t('Adress')}</div>
                         <div className="text-one">{t('Turkey')}</div>
                         <div className="text-two">Kazımdirik, Mustafa Kemal Cd. No:93, 35100 Bornova/İzmir</div></a>
