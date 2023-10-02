@@ -3,12 +3,18 @@
 import React from "react"
 import Layout from "../../../components/layout";
 import i18next from 'i18next'
+import Head from 'next/head';
 
 
 const Hakkimizda = () => {
     const { t } = i18next
     
     return (
+        <>
+        <Head>
+        <title>{t('about')}</title>
+        <meta name="description" content="BIM Modeling." />
+        </Head>
         <Layout>
         <div className="about-us">
         <div className="wrapper">
@@ -49,6 +55,7 @@ const Hakkimizda = () => {
             </div>
         </div>
         </Layout>
+        </>
     )
     }
 
