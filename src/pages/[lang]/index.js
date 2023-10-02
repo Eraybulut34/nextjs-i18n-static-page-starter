@@ -4,6 +4,8 @@ import Link from '../../components/link'
 import Layout from '../../components/layout'
 import { getAllLanguageSlugs, getLanguage } from '../../i18n'
 import { useEffect, useState } from 'react'
+import Head from 'next/head';
+
 
 
 
@@ -13,8 +15,13 @@ import { useEffect, useState } from 'react'
 export default function LangIndex({ language }) {
   const { t } = i18next
   return (
-  <Layout>
-    <div className="container">
+    <>
+    <Head>
+    <title>bimodel.net</title>
+    <meta name="description" content="BIM Modeling." />
+    </Head>
+    <Layout>
+      <div className="container">
       <div className="banner-box">
           <h1>{t('ourValuesAndPurpose')}</h1>
           <p>{t('ourVision')}</p>
@@ -26,7 +33,6 @@ export default function LangIndex({ language }) {
         </a>
       </div>
     </div>
-
     <div className="cont">
       <div className="inner">
           <h3>{t('ready')}</h3>
@@ -56,6 +62,7 @@ export default function LangIndex({ language }) {
         </div>
     </div>
   </Layout>
+    </>
   )
 }
 
