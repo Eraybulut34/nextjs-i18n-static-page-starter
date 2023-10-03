@@ -39,22 +39,30 @@ export default function LangIndex({ language }) {
         </div>
       <div className="section1">
         <div className="lang">
-          <a href="#">
+          <Link href="/lang/service/bim">
+            <a>
             <img src="https://cdn-icons-png.flaticon.com/512/6968/6968900.png" alt="" />
             <span className="title">BIM Modeling</span>
-          </a>
-          <a href="#">
+            </a>
+          </Link>
+          <Link href="/lang/service/object">
+            <a>
           <img src="https://t4.ftcdn.net/jpg/03/34/61/85/360_F_334618569_xsm60thnM5iv8CLE8j0kLFkcPuVzHde5.jpg" alt="" />
             <span className="title">BIM Object Modeling</span>
-          </a>
-          <a href="#">
-          <img src="https://cdn-icons-png.flaticon.com/512/7024/7024150.png" alt="" />
+            </a>
+          </Link>
+          <Link href="/lang/service/point">
+            <a>
+            <img src="https://cdn-icons-png.flaticon.com/512/7024/7024150.png" alt="" />
             <span className="title">Point Cloud Modeling</span>
-          </a>
-          <a href="#">
-          <img src="https://bim-withstand.com/wp-content/uploads/2019/03/Modeling-b.png" alt="" />
+            </a>
+          </Link>
+          <Link href="/lang/service/design">
+            <a>
+            <img src="https://bim-withstand.com/wp-content/uploads/2019/03/Modeling-b.png" alt="" />
             <span className="title">Design Automation</span>
           </a>
+          </Link>
         </div>
       </div>
       <div className="get">
