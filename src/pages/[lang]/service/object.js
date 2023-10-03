@@ -2,8 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import i18next from 'i18next'
 import 'twin.macro'
-import Link from './link'
-import LanguageMenu from './languageMenu'
+import Layout from '../../../components/layout'
 
 
 const object = function ({ children }) {
@@ -13,7 +12,10 @@ const object = function ({ children }) {
 
   return (
     <>
-        adadasdad
+    <Layout>
+
+      asddasads
+    </Layout>
     </>
   )
 }
