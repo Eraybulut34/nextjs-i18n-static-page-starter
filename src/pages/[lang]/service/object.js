@@ -37,45 +37,45 @@ const object = function ({ children }) {
             </div>
             <div className="nav">
               <h2>BIM Object Modeling</h2>
-              <h3>Assuring High-Quality Output</h3>
-              <p>BIM Object Modeling families creation requires specialized expertise as each and every element of the family has to be modeled, keeping the geometry of the family at the core. Bimodel has trained and developed a specialized team primarily focusing on BIM Object Modeling projects, assuring a high-quality output.</p>
-              <h3>Advantages of BIM Object Modeling Family Creation</h3>
-              <p>With BIM Object Modeling family Creation, we can display the parameter of actual equipment & imperative geometrical components of various elements like windows, boilers, tables, chairs, walls, etc., through graphics.</p>
+              <h3>{t('Output')}</h3>
+              <p>{t('Core')}</p>
+              <h3>{t('Family')}</h3>
+              <p>{t('Etc')}</p>
               <ul>
-                <li>BIM Object Modeling family creation has other parameters such as formula and imported data that will result in a better surface finish.</li>
-                <li>It helps to create more accurate models irrespective of size and design.</li>
-                <li>It enables feasible and economical re-sizing of models.</li>
-                <li>It maintains relationships and coordination in various units or parts of a design or model.</li>
-                <li>The model designed using BIM Object Modelingappears as realistic as possible and it involves accurate constructional documentation.</li>
-                <li>Family creation services provide 3D BIM Object Modelings that can be used for accurate building analysis and estimating purposes.</li>
+                <li>{t('That')}</li>
+                <li>{t('Helps')}</li>
+                <li>{t('And')}</li>
+                <li>{t('Various')}</li>
+                <li>{t('As')}</li>
+                <li>{t('Can')}</li>
               </ul>
-              <h3>BIM Object Modeling Family Creation Services</h3>
-              <p>Using BIM Object Modeling family creation services, many more items like curtain wall panels, ceilings, furniture, fixtures, counters, plumbing fixtures, electrical fixtures, machine parts, elevators, insulators and HVAC pumps can be created.</p>
+              <h3>{t('Ling')}</h3>
+              <p>{t('Machine')}</p>
               <ul>
-                <li>Structure family creation</li>
-                <li>Architecture family creation</li>
-                <li>Structural Family Creation</li>
-                <li>MEP Family Creation</li>
-                <li>Building System Families</li>
-                <li>BIM Families</li>
-                <li>Structural Components</li>
-                <li>MEP BIM Object Modeling families</li>
-                <li>Fixtures, Custom Applications</li>
-                <li>Partitions, Windows,u Walls, Doors</li>
-                <li>Related Cstom and Supporting Content</li>
-                <li>Related custom and supporting doors</li>
+                <li>{t('Structure')}</li>
+                <li>{t('Arc')}</li>
+                <li>{t('Structural')}</li>
+                <li>{t('Mep')}</li>
+                <li>{t('Sys')}</li>
+                <li>{t('Fam')}</li>
+                <li>{t('Ents')}</li>
+                <li>{t('Del')}</li>
+                <li>{t('Fix')}</li>
+                <li>{t('Doors')}</li>
+                <li>{t('Rel')}</li>
+                <li>{t('Tom')}</li>
               </ul>
-              <h3>Steps of BIM Object Modeling Family Creation Services</h3>
-              <p>The most successful software, BIM Object Modeling is nowadays used in various building information modeling projects. The detailed steps followed in offering effective BIM families are given here.</p>
+              <h3>{t('Cre')}</h3>
+              <p>{t('The')}</p>
               <ul>
-                <li>Choose the family template</li>
-                <li>Plan the parameters</li>
-                <li>Create the model geometry</li>
-                <li>Assign the object subcategories according to the needs</li>
-                <li>Set up the visibility rules</li>
-                <li>Create family types</li>
+                <li>{t('Template')}</li>
+                <li>{t('Plan')}</li>
+                <li>{t('Geo')}</li>
+                <li>{t('To')}</li>
+                <li>{t('Up')}</li>
+                <li>{t('Types')}</li>
               </ul>
-              <p>We at Bimodel provide fast and veritable BIM Object Modeling Family Creation services for different projects like residential, commercial, educational, industrial buildings. The highly skilled and experienced dynamic team of BIM Object Modeling family designers in Bimodel ensures the most superior quality services with fast turnaround time and at a reasonable rate.</p>
+              <p>{t('Super')}</p>
             </div>
         </div>
         </Layout>

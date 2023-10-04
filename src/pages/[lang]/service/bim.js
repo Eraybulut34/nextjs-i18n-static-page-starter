@@ -44,22 +44,22 @@ const bim = function ({ children }) {
             </div>
             <div className="nav">
               <h2>BIM Modeling</h2>
-              <h3>3D Revit Bim Modeling Services</h3>
-              <p>Our 3D BIM Modeling services ensure that all aspects of design and construction work in a coordinated manner!</p>
+              <h3>{t('Revit')}</h3>
+              <p>{t('Manner')}</p>
               <ul>
-                <li>With the replacement of AutoCAD drafting with BIM, designers can now create 1:1 scale virtual models of buildings.</li>
-                <li>One of the most powerful aspects of our custom 3D modeling service is that designers can create floor plans, sections and elevations by taking snapshots from different perspectives. This was not possible previously when building plans used to be created in CAD software.</li>
-                <li>Using Revit BIM modeling, it is possible to create color fill, 3D perspective, detailed drawing, and rendering limited walkthrough animation.</li>
-                <li>Our 3D model outsourcing services aim at bringing coordination and collaboration between various disciplines of architectural, structural and MEP; and increase accuracy in design decisions</li>
-                <li>We deliver clash-free 3D Revit modeling services for building plans to help contractors avoid rework and save cost and time.</li>
-                <li>If there is a change to any element, it would automatically propagate to keep the model consistent. For example, a change is made to the location of a wall, it would update the adjacent walls, roofs, floors, adjust the floor areas reported in schedules, redraw section views and correct the placement and values of dimensions and notes. As a result, we can get all the documentation coordinated even after the change.</li>
+                <li>{t('With')}</li>
+                <li>{t('Floor')}</li>
+                <li>{t('Render')}</li>
+                <li>{t('Aim')}</li>
+                <li>{t('Clash')}</li>
+                <li>{t('Any')}</li>
               </ul>
-              <h3>Our revit bim service</h3>
-              <p>We offer quality Revit BIM services at reasonable prices in multiple disciplines like structural, architectural and MEP BIM services.</p>
-              <p>Our skilled professional team develops a 3D Revit BIM model based on interior elevations, details, floor plans and sections provided by the clients into a BIM model.</p>
-              <p>We use Revit Families Creation for architectural objects like windows, walls, doors, cabinetry, furniture, etc. The ‘custom’ families that we create, match the unique building systems, furniture, and equipment of clients.</p>
-              <h3>Flexibility to Expand</h3>
-              <p>We have the flexibility to expand the existing Revit architectural background to include mechanical, electrical and plumbing equipment or rotate it in various directions to view the different perspectives of the building. This helps to identify and avoid conflicts between different building systems.</p>
+              <h3>{t('Our')}</h3>
+              <p>{t('Quality')}</p>
+              <p>{t('Plans')}</p>
+              <p>{t('Wals')}</p>
+              <h3>{t('Flex')}</h3>
+              <p>{t('Expand')}</p>
             </div>
         </div>
         </Layout>
