@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 
-/*yarin sayfalar arasi linkler ve sayfaların csslerini tamamla dil özelliğini farklı tasarım ile yap font-family'i tüm sayfalar için öğren*/
+/*
+-4 farklı cardın olduğu sayfaların boşluk sorunu
+-dil özelliğinin tasarımı
+-icon
+*/
 
 #__next {
   padding: 0;
@@ -567,6 +571,9 @@ svg {
   color: #fff;
   font-size: 2rem;
   text-align: center;
+  margin: 0;
+  padding: 15px;
+  
 }
 
 .service .lang {

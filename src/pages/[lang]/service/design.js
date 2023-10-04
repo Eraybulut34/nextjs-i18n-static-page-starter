@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import i18next from 'i18next'
 import 'twin.macro'
 import Layout from '../../../components/layout'
-
+import Link from 'next/link'
 
 const design = function ({ children }) {
   const router = useRouter()
@@ -16,22 +16,30 @@ const design = function ({ children }) {
             <div className="service">
               <h2>Services</h2>
               <div className="lang">
-              <a href="#">
+              <Link href="/service/bim">
+              <a>
               <img src="https://cdn-icons-png.flaticon.com/512/6968/6968900.png" alt="" />
               <span className="title">BIM Modeling</span>
               </a>
-            <a href="#">
+              </Link>
+              <Link href="/service/object">
+            <a>
           <img src="https://t4.ftcdn.net/jpg/03/34/61/85/360_F_334618569_xsm60thnM5iv8CLE8j0kLFkcPuVzHde5.jpg" alt="" />
             <span className="title">BIM Object Modeling</span>
             </a>
-            <a href="#">
+            </Link>
+            <Link href="/service/point">
+            <a>
             <img src="https://cdn-icons-png.flaticon.com/512/7024/7024150.png" alt="" />
             <span className="title">Point Cloud Modeling</span>
             </a>
-            <a href="#" className="modeling">
+            </Link>
+            <Link href="/service/design">
+            <a className="modeling">
             <img src="https://bim-withstand.com/wp-content/uploads/2019/03/Modeling-b.png" alt="" />
             <span className="title">Design Automation</span>
           </a>
+          </Link>
         </div>
             </div>
             <div className="nav">
