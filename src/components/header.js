@@ -14,7 +14,7 @@ const Header = function ({ children }) {
   return (
     <>
     <div className="header">
-      <p><a href="#">bimodel.net</a></p>
+      <p><a href="#">bimodel</a></p>
       <ul>    
       <li>
       <Link href="/">
