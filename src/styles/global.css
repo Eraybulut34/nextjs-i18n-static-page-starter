@@ -577,7 +577,7 @@ svg {
 }
 
 .service .lang .modeling {
-  border: 8px solid #0FD0AE;
+  border: 8px solid #d5cece;
 }
 
 .service .lang a {
@@ -624,6 +624,10 @@ svg {
   font-size: 1.5rem;
   color: #afafb6;
   font-size: bold;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-bottom: 2px solid #afafb6;
+  display: inline-block;
 }
 
 .nav ul li {
