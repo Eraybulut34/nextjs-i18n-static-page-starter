@@ -10,6 +10,7 @@ import Layout from '../../../components/layout'
 
 
 
+
 const Bim = function ({ children }) {
   const { t } = i18next
   

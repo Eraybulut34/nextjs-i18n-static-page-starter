@@ -6,6 +6,7 @@ import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 
 
+
 const Object = function ({ children }) {
   const { t } = i18next
 

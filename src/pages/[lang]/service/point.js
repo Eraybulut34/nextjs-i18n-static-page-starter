@@ -5,6 +5,7 @@ import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 
 
+
 const Point = function ({ children }) {
   const { t } = i18next
 

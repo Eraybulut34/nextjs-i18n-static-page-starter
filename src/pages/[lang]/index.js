@@ -28,7 +28,7 @@ export default function LangIndex({ language }) {
           <h1>{t('ourValuesAndPurpose')}</h1>
           <p>{t('ourVision')}</p>
           <Link href="#scn">
-          <a className="btn">{t('project')}</a>
+          <a  className="btn">{t('project')}</a>
           </Link>
       </div>
       <div className="banner-box banner-image">
