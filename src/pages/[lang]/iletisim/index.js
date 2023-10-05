@@ -14,6 +14,7 @@ const Hakkimizda = () => {
         <Head>
         <title>{t('contact')}</title>
         <meta name="description" content="BIM Modeling." />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
         </Head>
         <Layout>
             <div className="contact">
@@ -21,17 +22,23 @@ const Hakkimizda = () => {
             <div className="left-side">
                 <div className="address details">
                     <a href="https://www.google.com/maps?ll=38.461818,27.206661&z=13&t=m&hl=tr-TR&gl=US&mapclient=embed&q=Mustafa+Kemal+Cd.+No:93+Kaz%C4%B1mdirik+35100+Bornova/%C4%B0zmir">
+                    
+                    <i className="material-icons">location_on</i>
+
                         <div className="topic">{t('Adress')}</div>
                         <div className="text-one">{t('Turkey')}</div>
                         <div className="text-two">Kazımdirik, Mustafa Kemal Cd. No:93, 35100 Bornova/İzmir</div></a>
                 </div>
                 <div className="phone details">
                     <a href="#">
+                    <i className="material-icons">phone</i>
+
                         <div className="topic">{t('Phone')}</div>
                         <div className="text-two">(+90) 535 611 30 38</div></a>
                 </div>
                 <div className="email details">
                     <a href="#">
+                    <i className="material-icons">email</i>
                         <div className="topic">{t('Mail')}</div>
                         <div className="text-two">miray@bimodel.com</div></a>
                 </div>

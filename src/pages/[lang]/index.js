@@ -19,6 +19,8 @@ export default function LangIndex({ language }) {
     <Head>
     <title>bimodel.net</title>
     <meta name="description" content="BIM Modeling." />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
     </Head>
     <Layout>
       <div className="container">
