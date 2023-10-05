@@ -1,5 +1,5 @@
 
-import { useRouter } from 'next/router'
+
 import i18next from 'i18next'
 import 'twin.macro'
 import Link from '../../../components/link'
@@ -7,9 +7,7 @@ import Layout from '../../../components/layout'
 
 
 const Object = function ({ children }) {
-  const router = useRouter()
   const { t } = i18next
-  console.log(router,"router")
 
   return (
     <>
