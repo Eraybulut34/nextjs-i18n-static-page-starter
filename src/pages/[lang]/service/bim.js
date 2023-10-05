@@ -12,7 +12,7 @@ import Layout from '../../../components/layout'
 
 
 
-const bim = function ({ children }) {
+const Bim = function ({ children }) {
   const router = useRouter()
   const { t } = i18next
   console.log(router,"router")
@@ -75,4 +75,4 @@ const bim = function ({ children }) {
     </>
   )
 }
-export default bim;
+export default Bim;

@@ -5,7 +5,7 @@ import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 
 
-const design = function ({ children }) {
+const Design = function ({ children }) {
   const router = useRouter()
   const { t } = i18next
   console.log(router,"router")
@@ -81,4 +81,4 @@ const design = function ({ children }) {
     </>
   )
 }
-export default design
+export default Design

@@ -5,7 +5,7 @@ import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 
 
-const point = function ({ children }) {
+const Point = function ({ children }) {
   const router = useRouter()
   const { t } = i18next
   console.log(router,"router")
@@ -73,4 +73,4 @@ const point = function ({ children }) {
     </>
   )
 }
-export default point
+export default Point
