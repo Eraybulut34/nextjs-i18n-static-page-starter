@@ -5,7 +5,6 @@
 
 /*
 -dil özelliğinin tasarımı
--icon
 */
 
 #__next {
@@ -15,7 +14,7 @@
 
 html,
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica',Arial, sans-serif;
   background-color: #f4f7f9;
   overflow-x: hidden;
 }
@@ -569,8 +568,8 @@ svg {
 .service h2 {
   color: #fff;
   font-size: 2rem;
-  text-align: center;
-  margin: 0;
+  border-bottom: none;
+  margin: 0 600px;
   padding: 15px;
   
 }
@@ -585,8 +584,9 @@ svg {
 }
 
 .service .lang .modeling {
-  border: 8px solid #d5cece;
+  border: 8px solid #afafb6;
 }
+
 
 .service .lang a {
   width: 284px;

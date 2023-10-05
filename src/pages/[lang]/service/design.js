@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router'
 import i18next from 'i18next'
 import 'twin.macro'
+import Link from '../../../components/link'
 import Layout from '../../../components/layout'
-import Link from 'next/link'
+
 
 const design = function ({ children }) {
   const router = useRouter()
