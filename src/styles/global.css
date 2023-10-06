@@ -104,7 +104,7 @@ body {
   display: block;
 }
 
-.container .banner-box img {
+.container .banner-box .img {
   max-width: 80%;
 }
 
@@ -198,6 +198,7 @@ body {
 .section1 .lang a .title {
   font-size: 18px;
   color: #000;
+  margin-top: 25px;
 }
 
 
@@ -587,6 +588,7 @@ svg {
 .service .lang a .title {
   font-size: 18px;
   color: #000;
+  margin-top: 25px;
 }
 
 .nav {

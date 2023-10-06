@@ -5,6 +5,7 @@ import Layout from '../../components/layout'
 import { getAllLanguageSlugs, getLanguage } from '../../i18n'
 import { useEffect, useState } from 'react'
 import Head from 'next/head';
+import Image from 'next/image';
 
 
 
@@ -33,7 +34,7 @@ export default function LangIndex({ language }) {
       </div>
       <div className="banner-box banner-image">
         <a href="">
-          <img  src="https://www.erbilen.net/demo/egghead/img/ImmuateableImmer_Final.png" alt="" />
+          <Image   src="/images/images1.png" alt="" width={500} height={500} />
         </a>
       </div>
     </div>
@@ -45,25 +46,25 @@ export default function LangIndex({ language }) {
         <div className="lang">
           <Link href="/service/bim">
             <a>
-            <img src="https://cdn-icons-png.flaticon.com/512/6968/6968900.png" alt="" />
+            <Image src="/images/images2.png" alt="" width={100} height={100} />
             <span className="title">BIM Modeling</span>
             </a>
           </Link>
           <Link href="/service/object">
             <a>
-          <img src="https://t4.ftcdn.net/jpg/03/34/61/85/360_F_334618569_xsm60thnM5iv8CLE8j0kLFkcPuVzHde5.jpg" alt="" />
+          <Image src="/images/images8.png" alt="" width={100} height={100} />
             <span className="title">BIM Object Modeling</span>
             </a>
           </Link>
           <Link href="/service/point">
             <a>
-            <img src="https://cdn-icons-png.flaticon.com/512/7024/7024150.png" alt="" />
+            <Image src="/images/images4.png" alt="" width={100} height={100} />
             <span className="title">Point Cloud Modeling</span>
             </a>
           </Link>
           <Link href="/service/design">
             <a>
-            <img src="https://bim-withstand.com/wp-content/uploads/2019/03/Modeling-b.png" alt="" />
+            <Image src="/images/images5.png" alt="" width={100} height={100} />
             <span className="title">Design Automation</span>
           </a>
           </Link>
