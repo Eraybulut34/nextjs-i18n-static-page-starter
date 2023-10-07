@@ -96,16 +96,18 @@ body {
 
 .container .banner-box {
   width: 50%;
-  margin: 70px;
+  margin: 80px;
+  
 }
 
 .container .banner-box.banner-image a {
   transition: 200ms transform;
   display: block;
+  margin-left: 70px;
 }
 
-.container .banner-box .img {
-  max-width: 80%;
+.container .banner-box img {
+  max-width: 100%;
 }
 
 .container .banner-box.banner-image a:hover {
