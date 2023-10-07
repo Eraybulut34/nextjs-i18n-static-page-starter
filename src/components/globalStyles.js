@@ -18,8 +18,8 @@ const CustomStyles = createGlobalStyle`
   body > div {
     ${tw`p-2 min-h-screen`}
   }
-  h2 {
-    ${tw`text-2xl font-bold mt-10 mb-2 border-b-2 border-b-purple-500`}
+   h2 {
+    ${tw`text-2xl font-bold mt-10 mb-2 border-b-2 border-b-purple-100`}
   }
 `
 

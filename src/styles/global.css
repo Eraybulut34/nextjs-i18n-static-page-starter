@@ -537,13 +537,17 @@ svg {
   height: 100%;
 }
 
+
+
 .service h2 {
   color: #fff;
   font-size: 2rem;
   border-bottom: none;
   margin: 0 600px;
   padding: 15px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service .lang {
@@ -592,8 +596,8 @@ svg {
 }
 
 .nav {
-  padding: 20px;
-  
+  padding: 120px;
+ 
 }
 
 .nav h2 {
