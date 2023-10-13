@@ -627,3 +627,39 @@ svg {
   font-weight: bold;
 }
 
+/* CSS dosyanızda veya projenizin stil dosyasında */
+
+
+
+.expanding-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+
+.expanding-card h3 {
+  text-align: center;
+}
+
+.expanding-card img {
+  display: block;
+  margin: 0 auto;
+ 
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  
+}
+
+.expanding-card.expanded {
+  width: 100%; /* Genişlemiş kartın tüm yatay alanı kaplamasını sağlar */
+}
+
+.expanding-card .card-content {
+  padding: 10px;
+}

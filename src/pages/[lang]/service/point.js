@@ -4,6 +4,7 @@ import 'twin.macro'
 import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 import Image from 'next/image';
+import ExpandingCard from '../../../components/expandingCard';
 
 
 const Point = function ({ children }) {
@@ -68,6 +69,36 @@ const Point = function ({ children }) {
                 </ul>
             </div>
         </div>
+        <div className="model">
+        <div className="service">
+          <h2>Some images</h2>
+          <div className="expanding-cards-container">
+          <ExpandingCard
+            imageSrc="/images/images9.png" alt=""    
+            title="BIM Modeling"
+            content="BIM modeling content goes here."
+          />
+           <ExpandingCard
+            imageSrc="/images/images10.png"
+            title="BIM Modeling"
+            content="BIM modeling content goes here."
+          />
+           <ExpandingCard
+            imageSrc="/images/images11.png"
+            title="BIM Modeling"
+            content="BIM modeling content goes here."
+          />
+           <ExpandingCard
+            imageSrc="/images/images12.png"
+            title="BIM Modeling"
+            content="BIM modeling content goes here."
+          />
+          </div>
+        </div>
+        <div className="nav">
+          {/* Sayfa içeriği burada */}
+        </div>
+      </div>
         </Layout>
     </>
   )

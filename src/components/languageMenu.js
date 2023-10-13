@@ -8,7 +8,6 @@ const LanguageMenu = () => {
   const { t } = i18next
 
 
-
   return (
     <div tw="flex flex-wrap content-end text-gray-300">
       {languages.map((lang, index) => {
