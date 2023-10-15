@@ -10,37 +10,35 @@ function App() {
   const handlePanelClick = (index) => {
     setActivePanelIndex(index === activePanelIndex ? -1 : index);
   };
+  const [images,setImages]=useState([{
+    id:0,
+    url:"/images/images14.jpeg"
+  },
+  {
+    id:1,
+    url:"/images/images14.jpeg"
+  },
+  {
+    id:2,
+    url:"/images/images15.jpeg"
+  },
+  {
+    id:3,
+    url:"/images/images14.jpeg"
+  },
+])
 
   return (
     <div className="app">
-      <div
-        className={`panel ${activePanelIndex === 0 ? 'active' : ''}`}
-        style={{ backgroundImage: 'url(/images/images14.jpeg)' }}
-        onClick={() => handlePanelClick(0)}
-      >
-        
-      </div>
-      <div
-        className={`panel ${activePanelIndex === 1 ? 'active' : ''}`}
-        style={{ backgroundImage: 'url(/images/images14.jpeg)' }}
-        onClick={() => handlePanelClick(1)}
-      >
-        
-      </div>
-      <div
-        className={`panel ${activePanelIndex === 2 ? 'active' : ''}`}
-        style={{ backgroundImage: 'url(/images/images15.jpeg)' }}
-        onClick={() => handlePanelClick(2)}
-      >
-        
-      </div>
-      <div
-        className={`panel ${activePanelIndex === 3 ? 'active' : ''}`}
-        style={{ backgroundImage: 'url(/images/images14.jpeg)' }}
-        onClick={() => handlePanelClick(3)}
-      >
-        
-      </div>
+      {images.map((image,index)=>{
+        return(
+          <div
+        className={`panel ${activePanelIndex === index ? 'active' : ''}`}
+        style={{ backgroundImage: `url(${image.url})` }}
+        onClick={() => handlePanelClick(index)}/>
+        )
+      })}
+
     </div>
   );
 }

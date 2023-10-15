@@ -644,7 +644,7 @@ svg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 5rem;
+  border-radius: 4rem;
   color: #fff;
   cursor: pointer;
   flex: 1; /* Bu satırı değiştirdik */
@@ -668,7 +668,7 @@ svg {
   max-height: 50vh;
   width: 70%;
   transition: flex 0.7s ease-in;
-  border-radius: 5rem;
+  border-radius: 4rem;
 }
 
 .panel-content {
