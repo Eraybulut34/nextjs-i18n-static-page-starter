@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 const Object = function ({ children }) {
   const { t } = i18next
+  
 
   return (
     <>

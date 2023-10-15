@@ -5,11 +5,31 @@ import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 import Image from 'next/image';
 import App from '../../../components/App';
+import {useState} from 'react';
 
 
 
 const Point = function ({ children }) {
   const { t } = i18next
+
+  const [images,setImages]=useState([
+  {
+    id:0,
+    url:"/images/images14.jpeg"
+  },
+  {
+    id:1,
+    url:"/images/images14.jpeg"
+  },
+  {
+    id:2,
+    url:"/images/images15.jpeg"
+  },
+  {
+    id:3,
+    url:"/images/images14.jpeg"
+  },
+])
 
   return (
     <>
@@ -71,7 +91,7 @@ const Point = function ({ children }) {
             </div>
         </div>
         <div className="app">
-        <App></App>
+        <App images={images}></App>
         </div>
         </Layout>
     </>

@@ -4,29 +4,13 @@ import { useState } from 'react';
 
 
 
-function App() {
+function App({images}) {
   const [activePanelIndex, setActivePanelIndex] = useState(0);
 
   const handlePanelClick = (index) => {
     setActivePanelIndex(index === activePanelIndex ? -1 : index);
   };
-  const [images,setImages]=useState([{
-    id:0,
-    url:"/images/images14.jpeg"
-  },
-  {
-    id:1,
-    url:"/images/images14.jpeg"
-  },
-  {
-    id:2,
-    url:"/images/images15.jpeg"
-  },
-  {
-    id:3,
-    url:"/images/images14.jpeg"
-  },
-])
+
 
   return (
     <div className="app">
