@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 
 
+
 const Bim = function ({ children }) {
   const { t } = i18next
   
@@ -63,6 +64,7 @@ const Bim = function ({ children }) {
               <p>{t('Expand')}</p>
             </div>
         </div>
+        
         </Layout>
     </>
   )

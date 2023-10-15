@@ -631,35 +631,54 @@ svg {
 
 
 
-.expanding-cards-container {
+.app {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 20px;
-  margin-top: 30px;
+  width: 100%; /* Genişliği artırabilirsiniz */
+  height: 100vh;
 }
 
-
-.expanding-card h3 {
-  text-align: center;
-}
-
-.expanding-card img {
-  display: block;
-  margin: 0 auto;
- 
+.panel {
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 500px;
+  color: #fff;
+  cursor: pointer;
+  flex: 1; /* Bu satırı değiştirdik */
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5; /* Bu satırı değiştirdik */
   background-size: contain;
-  width: 100%;
-  height: 400px;
-  
+  background-repeat: no-repeat;
+  height: 80vh;
 }
 
-.expanding-card.expanded {
-  width: 100%; /* Genişlemiş kartın tüm yatay alanı kaplamasını sağlar */
+.panel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.5s ease-in;
 }
 
-.expanding-card .card-content {
-  padding: 10px;
+.panel.active .panel-content {
+  background: rgba(0, 0, 0, 0);
 }
+
