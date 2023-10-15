@@ -634,19 +634,22 @@ svg {
 .app {
   display: flex;
   width: 100%; /* Genişliği artırabilirsiniz */
-  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  padding-inline: 5rem;
+  background: linear-gradient(170deg, #212A39, #181E28);
 }
 
 .panel {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 500px;
+  border-radius: 5rem;
   color: #fff;
   cursor: pointer;
   flex: 1; /* Bu satırı değiştirdik */
   margin: 10px;
+  height: 50vh;
   position: relative;
   transition: flex 0.7s ease-in;
 }
@@ -656,15 +659,16 @@ svg {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  margin: 0;
-  opacity: 0;
 }
 
 .panel.active {
   flex: 5; /* Bu satırı değiştirdik */
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  max-height: 50vh;
+  width: 70%;
+  transition: flex 0.7s ease-in;
+  border-radius: 5rem;
 }
 
 .panel-content {
