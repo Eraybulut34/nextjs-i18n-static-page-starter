@@ -203,7 +203,19 @@ body {
   margin-top: 25px;
 }
 
+.get a {
+  background: #ebebeb;
+  color: #000;
+  font-weight: 500;
+  transition: 100ms all;
+  padding: 30px;
+  text-transform: uppercase;
+}
 
+.get a:hover {
+  color: #000;
+  transform: scale(1.02);
+}
 
 .footer {
   margin-top: auto;
@@ -638,6 +650,7 @@ svg {
   justify-content: center;
   padding-inline: 5rem;
   background: linear-gradient(170deg, #212A39, #181E28);
+  padding: 50px;
 }
 
 .panel {
@@ -663,7 +676,7 @@ svg {
 
 .panel.active {
   flex: 5; /* Bu satırı değiştirdik */
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   max-height: 50vh;
   width: 70%;
@@ -684,5 +697,17 @@ svg {
 
 .panel.active .panel-content {
   background: rgba(0, 0, 0, 0);
+}
+
+.bdm h1 {
+  display: flex;
+  justify-content: center;
+  background:  linear-gradient(170deg, #212A39, #181E28);
+  height: 10vh;
+  padding: 10px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid #fff;
 }
 

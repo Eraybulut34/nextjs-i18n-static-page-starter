@@ -4,12 +4,27 @@ import 'twin.macro'
 import Link from '../../../components/link'
 import Layout from '../../../components/layout'
 import Image from 'next/image';
-
+import App from '../../../components/App';
+import {useState} from 'react';
 
 
 const Design = function ({ children }) {
   const { t } = i18next
   
+  const [images,setImages]=useState([
+    {
+      id:0,
+      url:"/images/images19.jpeg"
+    },
+    {
+      id:1,
+      url:"/images/images21.jpeg"
+    },
+    {
+      id:2,
+      url:"/images/images20.jpeg"
+    },
+  ])
 
   return (
     <>
@@ -21,25 +36,25 @@ const Design = function ({ children }) {
               <Link href="/service/bim">
               <a>
               <Image src="/images/images2.png" alt="" width={100} height={100} />
-              <span className="title">BIM Modeling</span>
+              <span className="title">{t('bmn')}</span>
               </a>
               </Link>
               <Link href="/service/object">
             <a>
             <Image src="/images/images8.png" alt="" width={100} height={100} />
-            <span className="title">BIM Object Modeling</span>
+            <span className="title">{t('exp')}</span>
             </a>
             </Link>
             <Link href="/service/point">
             <a>
             <Image src="/images/images4.png" alt="" width={100} height={100} />
-            <span className="title">Point Cloud Modeling</span>
+            <span className="title">{t('cld')}</span>
             </a>
             </Link>
             <Link href="/service/design">
             <a className="modeling">
             <Image src="/images/images5.png" alt="" width={100} height={100} />
-            <span className="title">Design Automation</span>
+            <span className="title">{t('auto')}</span>
           </a>
           </Link>
         </div>
@@ -77,6 +92,12 @@ const Design = function ({ children }) {
                 <li>{t('Schedules')}</li>
               </ul>
             </div>
+        </div>
+        <div className="bdm">
+        <h1>{t('dsgn')}</h1>
+        </div>
+        <div className="app">
+        <App images={images}></App>
         </div>
         </Layout>
     </>

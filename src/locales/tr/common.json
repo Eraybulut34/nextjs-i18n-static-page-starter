@@ -13,7 +13,7 @@
   "ourVision": "Küresel bir sürdürülebilir kalkınma danışmanlığı olarak çalışmalarımız güvenli, kapsayıcı ve dayanıklı topluluklar, altyapılar ve şehirler üretmeye odaklanıyoruz. Sürdürülebilir kalkınmanın birçok farklı faktörü kapsadığının bilincindeyiz. Dolayısıyla çalışmalarımızda aynı zamanda çevresel yenilenmeye, biyoçeşitliliğe, kaynakların korunmasına, istikrarlı ekonomik büyümeye ve sosyal değere de öncelik veriyoruz.",
   "project": "proje",
   "ready": "Servislerimizden hizmet almaya hazır mısınız?",
-  "get": "Bilgi al",
+  "get": "İletişime Geç",
   "thing": "Hakkımızda bilmeniz gereken tek şey, yaratıcılık ve performans arasında denge kurması gerekmeyen markalar oluşturduğumuzdur.",
   "data": "Deneysel Tasarım bilimini açıklamaktan, stratejiyi, yaratıcılığı, medyayı, tasarımı ve ticareti nasıl entegre ettiğimizi göstermekten veya verilerle cesaretlendirilen yaratıcılığa övgüler yağdırmaktan her zaman mutluluk duyarız.",
   "talk": "Anlattıklarımızdan daha fazlasını yapabiliriz.",
@@ -125,5 +125,13 @@
   "Accuracy": "Esnaf ve katkıda bulunanlar için verilerin çıkarılmasına ve manipülasyonuna olanak tanır ve bina tasarımı ve teslimat sürecinin doğruluğunu artırır.",
   "Than": "Olası sorunlar, imalat ve şantiyeye kurulum öncesinde tespit edilir. Bina projesini ayrı bir çizim olarak görmek yerine bir bütün olarak görmemize olanak sağlıyor.",
   "Schedules": "Müşteriye yaklaşık %50 maliyet tasarrufu ve teslimat programlarında %40'ın üzerinde iyileşme sağlar.",
-  "Ser": "Servisler"
+  "Ser": "Servisler",
+  "bdm": "Bim Model Örnekleri",
+  "obj": "Nesne Model Örnekleri",
+  "dsgn": "Tasarım Otomasyonu Örnekleri",
+  "pnt": "Nokta Bulutu Örnekleri",
+  "bmn": "BIM Model",
+  "exp": "BIM Nesne Model",
+  "cld": "Nokta Bulut Model",
+  "auto": "Tasarım Otomasyonu"
 }

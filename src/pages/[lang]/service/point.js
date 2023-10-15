@@ -15,19 +15,15 @@ const Point = function ({ children }) {
   const [images,setImages]=useState([
   {
     id:0,
-    url:"/images/images14.jpeg"
+    url:"/images/images30.jpg"
   },
   {
     id:1,
-    url:"/images/images14.jpeg"
+    url:"/images/images35.jpg"
   },
   {
     id:2,
-    url:"/images/images15.jpeg"
-  },
-  {
-    id:3,
-    url:"/images/images14.jpeg"
+    url:"/images/images45.jpg"
   },
 ])
 
@@ -41,25 +37,25 @@ const Point = function ({ children }) {
               <Link href="/service/bim">
               <a href="#" >
               <Image src="/images/images2.png" alt="" width={100} height={100} />
-              <span className="title">BIM Modeling</span>
+              <span className="title">{t('bmn')}</span>
               </a>
               </Link>
               <Link href="/service/object">
             <a>
             <Image src="/images/images8.png" alt="" width={100} height={100} />
-            <span className="title">BIM Object Modeling</span>
+            <span className="title">{t('exp')}</span>
             </a>
             </Link>
             <Link href="/service/point">
             <a className="modeling">
             <Image src="/images/images4.png" alt="" width={100} height={100} />
-            <span className="title">Point Cloud Modeling</span>
+            <span className="title">{t('cld')}</span>
             </a>
             </Link>
             <Link href="/service/design">
             <a>
             <Image src="/images/images5.png" alt="" width={100} height={100} />
-            <span className="title">Design Automation</span>
+            <span className="title">{t('auto')}</span>
           </a>
           </Link>
         </div>
@@ -89,6 +85,9 @@ const Point = function ({ children }) {
                   <li>{t('Time')}</li>
                 </ul>
             </div>
+        </div>
+        <div className="bdm">
+        <h1>{t('pnt')}</h1>
         </div>
         <div className="app">
         <App images={images}></App>
