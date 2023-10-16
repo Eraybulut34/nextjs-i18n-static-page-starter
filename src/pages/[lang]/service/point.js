@@ -15,15 +15,23 @@ const Point = function ({ children }) {
   const [images,setImages]=useState([
   {
     id:0,
-    url:"/images/images30.jpg"
+    url:"/images/images45.png"
   },
   {
     id:1,
-    url:"/images/images35.jpg"
+    url:"/images/images50.png"
   },
   {
     id:2,
-    url:"/images/images45.jpg"
+    url:"/images/images55.png"
+  },
+  {
+    id:2,
+    url:"/images/images60.png"
+  },
+  {
+    id:2,
+    url:"/images/images65.png"
   },
 ])
 
