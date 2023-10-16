@@ -17,6 +17,7 @@ function App({images}) {
       {images.map((image,index)=>{
         return(
           <div
+          key={index}
         className={`panel ${activePanelIndex === index ? 'active' : ''}`}
         style={{ backgroundImage: `url(${image.url})` }}
         onClick={() => handlePanelClick(index)}/>
