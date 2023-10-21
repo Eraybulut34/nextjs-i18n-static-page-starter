@@ -6,6 +6,11 @@ import { getAllLanguageSlugs, getLanguage } from '../../i18n'
 import { useEffect, useState } from 'react'
 import Head from 'next/head';
 import Image from 'next/image';
+import VideoComponent from '../../components/VideoComponent';
+
+
+
+
 
 
 
@@ -22,19 +27,37 @@ export default function LangIndex({ language }) {
     </Head>
     <Layout>
       <div className="container">
+      
       <div className="banner-box">
+      
           <h1>{t('ourValuesAndPurpose')}</h1>
+         
           <p>{t('ourVision')}</p>
+          
           <Link href="#scn">
-          <a  className="btn">{t('project')}</a>
+          <a className="btn">{t('project')}</a>
           </Link>
       </div>
+      
+
       <div className="banner-box banner-image">
         <a href="">
-          <Image   src="/images/images1.png" alt="" width={500} height={500} />
+          <Image   src="/images/images1.png" alt="" width={500} height={500} /> 
         </a>
       </div>
     </div>
+    <div className="logos">
+            <div className="logos-slide">
+            <div className="sogol"><Image src="/images/images2.png" alt="" width={100} height={100} /><p>Bim Modeling</p></div>
+            <div className="sogol"><Image src="/images/images8.png" alt="" width={100} height={100} /><p>Bim Object Modeling</p></div>
+            <div className="sogol"><Image src="/images/images5.png" alt="" width={100} height={100} /><p>Design Automation</p></div>
+            <div className="sogol"><Image src="/images/images4.png" alt="" width={100} height={100} /><p>Point Cloud Modeling</p></div>
+            <div className="sogol"><Image src="/images/images97.png" alt="" width={120} height={120} /><p>Building</p></div>
+            <div className="sogol"><Image src="/images/images94.png" alt="" width={120} height={120} /><p>Software</p></div>
+            <div className="sogol"><Image src="/images/images95.png" alt="" width={120} height={120} /><p>Plan</p></div>
+            </div>
+            
+        </div>
     <div className="cont" id="scn">
       <div className="inner">
           <h3>{t('ready')}</h3>
@@ -72,6 +95,10 @@ export default function LangIndex({ language }) {
         <a href="#" className="btn">{t('get')}</a>
         </Link>
         </div>
+    </div>
+    
+    <div className="video">
+    <VideoComponent />
     </div>
   </Layout>
     </>

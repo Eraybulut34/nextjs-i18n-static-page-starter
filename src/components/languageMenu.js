@@ -1,31 +1,28 @@
-import React, { useState } from 'react';
-import i18next from 'i18next'
-import { languages } from '../i18n'
-import tw from 'twin.macro'
-import Link from './link'
+import React from 'react';
+import i18next from 'i18next';
+import Select from 'react-select';
+import { languages } from '../i18n';
 
 const LanguageMenu = () => {
-  const { t } = i18next
+  const { t } = i18next;
 
+  const languageOptions = languages.map((lang) => ({
+    value: lang,
+    label: t(lang),
+  }));
 
   return (
-    <div tw="flex flex-wrap content-end text-gray-300">
-      {languages.map((lang, index) => {
-        return (
-          <Link key={index} locale={lang}>
-            <a
-              css={[
-                tw`text-base m-0.5 p-0.5 cursor-pointer uppercase`,
-                i18next.language === lang && tw`text-green-400  `,
-              ]}
-            >
-              {t(lang)}
-            </a>
-          </Link>
-        )
-      })}
+    <div>
+      <Select
+        options={languageOptions}
+        value={languageOptions.find((option) => option.value === i18next.language)}
+        onChange={(selectedOption) => {
+          const selectedLanguage = selectedOption.value;
+          // Dil değiştirme işlemini burada gerçekleştirin (örneğin, i18next ile)
+        }}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default LanguageMenu
+export default LanguageMenu;
