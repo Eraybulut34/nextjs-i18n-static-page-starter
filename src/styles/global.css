@@ -296,7 +296,7 @@ body {
 .footer {
   margin-top: auto;
   padding: 75px;
-  border-top: 5px solid #0FD0AE;
+  border-top: 5px solid #13DD7A;
   background-color: #fff;
 }
 
@@ -574,8 +574,7 @@ ul li a:hover {
   
 
 .logos-slide {
-
-  animation: 10s slide infinite linear;
+  animation: 30s slide infinite linear;
   display: inline-flex;
   align-items: center;
   justify-content: center;
