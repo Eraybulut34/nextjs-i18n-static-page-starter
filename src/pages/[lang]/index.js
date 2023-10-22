@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import Head from 'next/head';
 import Image from 'next/image';
 import VideoComponent from '../../components/VideoComponent';
+import gsap from 'gsap';
 
 
 
@@ -14,8 +15,20 @@ import VideoComponent from '../../components/VideoComponent';
 
 
 
+function LangIndex({ language }) {
+  useEffect(() => {
+    gsap.to('.banner-box h1', {
+      duration: 8,
+      x: 10,
+      opacity: 5, 
+    });
 
-export default function LangIndex({ language }) {
+    gsap.to('.banner-box p', {
+      duration: 8,
+      x: 10,
+      opacity: 5,
+    });
+  }, []);
   const { t } = i18next
   return (
     <>
@@ -40,7 +53,6 @@ export default function LangIndex({ language }) {
         </a>
       </div>
     </div>
-    
     <div className="logos">
             <div className="logos-slide">
             <div className="sogol"><Image src="/images/images2.png" alt="" width={100} height={100} /><p>Bim Modeling</p></div>
@@ -52,7 +64,6 @@ export default function LangIndex({ language }) {
             <div className="sogol"><Image src="/images/images95.png" alt="" width={120} height={120} /><p>Plan</p></div>
             </div>
         </div>
-        
     <div className="cont" id="scn">
       <div className="inner">
           <h3>{t('ready')}</h3>
@@ -99,19 +110,21 @@ export default function LangIndex({ language }) {
   )
 }
 
+export default LangIndex;
+
 export async function getStaticPaths() {
-  const paths = getAllLanguageSlugs()
+  const paths = getAllLanguageSlugs();
   return {
     paths,
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps({ params }) {
-  const language = getLanguage(params.lang)
+  const language = getLanguage(params.lang);
   return {
     props: {
       language,
     },
-  }
+  };
 }
