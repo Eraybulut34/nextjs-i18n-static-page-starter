@@ -102,6 +102,9 @@ function LangIndex({ language }) {
         </Link>
         </div>
     </div>
+    <div className="empty">
+      <h1>BIM MODELING</h1>
+    </div>
     <div className="video">
     <VideoComponent />
     </div>
