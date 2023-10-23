@@ -902,50 +902,30 @@ svg {
 
 .empty {
   text-align: center;
-  background: #fff;
-  color: #10182F;
-  margin: 30px;
-  padding: 30px;
-  border-radius: 30px;
-  font-size: 2.5rem;
-  font-weight: 500;
+  color: #fff;
+  font-size: 1.5rem;
+  
 }
 
-.emp {
-  text-align: center;
-  background: #fff;
-  color: #10182F;
-  margin: 30px;
-  padding: 30px;
-  border-radius: 30px;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
 
-.pcm {
-  text-align: center;
-  background: #fff;
-  color: #10182F;
-  margin: 30px;
-  padding: 30px;
-  border-radius: 30px;
-  font-size: 2.5rem;
-  font-weight: 500;
+.return {
+  background: #10182F;
+  height: 50vh;
 }
-
 
 .play {
   background: #10182F;
   width: 95%;
-  margin: 30px;
+  
   border-radius: 30px;
   height: 50vh;
-  margin: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   overflow: hidden;
 }
+
+
 
 
 

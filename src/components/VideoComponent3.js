@@ -55,12 +55,14 @@ const VideoComponent3 = () => {
   };
 
   return (
+    <div className="return">
     <div className="play" onClick={togglePlaying}>
+        <h3 className="empty">Point Cloud Modeling</h3>
       {videoRefs.map((videoRef, index) => (
         <video
           key={index}
           className="vdr"
-          width="30%"
+          width="25%"
           height="auto"
           ref={videoRef}
         >
@@ -68,6 +70,7 @@ const VideoComponent3 = () => {
           Tarayıcınız video etiketini desteklemiyor.
         </video>
       ))}
+    </div>
     </div>
   );
 };
