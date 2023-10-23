@@ -57,7 +57,7 @@ const VideoComponent3 = () => {
   return (
     <div className="return">
     <div className="play" onClick={togglePlaying}>
-        <h3 className="empty">Point Cloud Modeling</h3>
+      <h3 className="empty">Point Cloud Modeling</h3>
       {videoRefs.map((videoRef, index) => (
         <video
           key={index}
