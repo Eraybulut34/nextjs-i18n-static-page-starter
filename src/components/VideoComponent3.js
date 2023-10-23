@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const VideoComponent2 = () => {
+const VideoComponent3 = () => {
   const videos = [
-    '/images/video7.mp4',
-    '/images/video8.mp4',
-    '/images/video9.mp4',
+    '/images/video10.mp4',
+    '/images/video11.mp4',
+    '/images/video12.mp4',
   ];
   const videoRefs = videos.map(() => useRef(null));
   const currentVideoIndexRef = useRef(0);
@@ -72,4 +72,4 @@ const VideoComponent2 = () => {
   );
 };
 
-export default VideoComponent2;
+export default VideoComponent3;

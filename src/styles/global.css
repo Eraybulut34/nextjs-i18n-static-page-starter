@@ -922,13 +922,24 @@ svg {
   font-weight: 500;
 }
 
+.pcm {
+  text-align: center;
+  background: #fff;
+  color: #10182F;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 
 .play {
-  background: #fff;
+  background: #10182F;
   width: 95%;
   margin: 30px;
   border-radius: 30px;
-  height: 80vh;
+  height: 50vh;
   margin: 30px;
   display: flex;
   align-items: center;
