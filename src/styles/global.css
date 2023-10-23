@@ -911,6 +911,17 @@ svg {
   font-weight: 500;
 }
 
+.emp {
+  text-align: center;
+  background: #fff;
+  color: #10182F;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
 
 .play {
   background: #fff;
@@ -929,7 +940,7 @@ svg {
 
 .vdr {
   margin: 10px;
-  border-radius: 1px;
+  border-radius: 30px;
   max-width: 95%; /* Videoların orijinal genişliklerini koru */
   /* Otomatik yükseklik ayarı */
   height:auto;

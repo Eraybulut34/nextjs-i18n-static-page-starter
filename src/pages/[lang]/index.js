@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import Head from 'next/head';
 import Image from 'next/image';
 import VideoComponent from '../../components/VideoComponent';
+import VideoComponent2 from '../../components/VideoComponent2';
 import gsap from 'gsap';
 
 
@@ -107,6 +108,12 @@ function LangIndex({ language }) {
     </div>
     <div className="video">
     <VideoComponent />
+    </div>
+    <div className="emp">
+      <h1>Object Modeling</h1>
+    </div>
+    <div className="video">
+    <VideoComponent2 />
     </div>
   </Layout>
     </>
