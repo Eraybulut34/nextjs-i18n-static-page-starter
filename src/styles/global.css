@@ -902,9 +902,12 @@ svg {
 
 .empty {
   text-align: center;
-  color: #fff;
+  color: #10182F;
   font-size: 1.5rem;
-  
+  background: #13DD7A;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:   0px 2px 2px 0px rgb(43, 221, 73);
 }
 
 
@@ -916,7 +919,6 @@ svg {
 .play {
   background: #10182F;
   width: 95%;
-  
   border-radius: 30px;
   height: 50vh;
   display: flex;
