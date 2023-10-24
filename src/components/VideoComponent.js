@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
+
 const VideoComponent = () => {
   const videos = [
     '/images/video4.mp4',
@@ -55,22 +56,47 @@ const VideoComponent = () => {
     }
   };
 
+  // Düğmenin görünümünü oynatma durumuna göre özelleştirme
+  const playButtonStyle = {
+    backgroundColor: isPlaying ? 'navy' : 'rgb(144, 238, 144)', // Lacivert ve açık yeşil/turkuaz rengi
+    padding: '10px', // 10px iç boşluk
+    // Diğer stillendirme özellikleri buraya eklenebilir.
+  };
+  
+  const playIcon = isPlaying ? (
+    <i className="material-icons">play_arrow</i>
+  ) : (
+    <i className="material-icons">pause</i>
+  );
+  
+  
+
+  const playButtonText = isPlaying ? 'Play' : 'Pause';
+
   return (
     <div className="return">
-    <div className="play" onClick={togglePlaying}>
-      {videoRefs.map((videoRef, index) => (
-        <video
-          key={index}
-          className="vdr"
-          width="35%"
-          height="auto"
-          ref={videoRef}
-        >
-          <source src={videos[index]} type="video/mp4" />
-          Tarayıcınız video etiketini desteklemiyor.
-        </video>
-      ))}
-    </div>
+      <div>
+        <button onClick={togglePlaying} style={playButtonStyle}>
+          {playButtonText}
+        </button>
+      </div>
+      <div className="play" onClick={togglePlaying}>
+        {videoRefs.map((videoRef, index) => (
+          <video
+            key={index}
+            className="vdr"
+            width="35%"
+            height="auto"
+            ref={videoRef}
+          >
+            <source src={videos[index]} type="video/mp4" />
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+        ))}
+      </div>
+
+      {/* Yeni eklenen düğme */}
+      
     </div>
   );
 };

@@ -9,6 +9,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </Head>
       <body>
         <Main />
