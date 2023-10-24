@@ -58,12 +58,11 @@ const VideoComponent = () => {
   return (
     <div className="return">
     <div className="play" onClick={togglePlaying}>
-      <h3 className="empty">Bim Modeling</h3>
       {videoRefs.map((videoRef, index) => (
         <video
           key={index}
           className="vdr"
-          width="25%"
+          width="35%"
           height="auto"
           ref={videoRef}
         >

@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const VideoComponent2 = () => {
+const VideoComponent4 = () => {
   const videos = [
-    '/images/video7.mp4',
-    '/images/video8.mp4',
-    '/images/video9.mp4',
+    '/images/video13.mp4',
+    '/images/video14.mp4',
+    '/images/video15.mp4',
   ];
-   // eslint-disable-next-line
+  // eslint-disable-next-line
   const videoRefs = videos.map(() => useRef(null));
   const currentVideoIndexRef = useRef(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -75,4 +75,4 @@ const VideoComponent2 = () => {
   );
 };
 
-export default VideoComponent2;
+export default VideoComponent4;

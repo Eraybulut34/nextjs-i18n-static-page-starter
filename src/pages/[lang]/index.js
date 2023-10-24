@@ -9,6 +9,7 @@ import Image from 'next/image';
 import VideoComponent from '../../components/VideoComponent';
 import VideoComponent2 from '../../components/VideoComponent2';
 import VideoComponent3 from '../../components/VideoComponent3';
+import VideoComponent4 from '../../components/VideoComponent4';
 import gsap from 'gsap';
 
 
@@ -106,13 +107,14 @@ function LangIndex({ language }) {
     </div>
     
     <div className="video">
+      <h1 className="empty">Bım Modeling</h1>
     <VideoComponent />
-    
+    <h1 className="empty">Object Modeling</h1>
     <VideoComponent2 />
-    
-    
-    
+    <h1 className="empty">Point Cloud Modeling</h1>
     <VideoComponent3 />
+    <h1 className="empty">Design Automation</h1>
+    <VideoComponent4 />
     </div>
   </Layout>
     </>
