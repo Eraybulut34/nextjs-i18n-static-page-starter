@@ -6,6 +6,7 @@ const VideoComponent = () => {
     '/images/video5.mp4',
     '/images/video6.mp4',
   ];
+  // eslint-disable-next-line
   const videoRefs = videos.map(() => useRef(null));
   const currentVideoIndexRef = useRef(0);
   const [isPlaying, setIsPlaying] = useState(true);
