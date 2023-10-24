@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import Head from 'next/head';
 
 
 const VideoComponent = () => {
@@ -58,23 +59,27 @@ const VideoComponent = () => {
 
   // Düğmenin görünümünü oynatma durumuna göre özelleştirme
   const playButtonStyle = {
-    backgroundColor: isPlaying ? 'navy' : 'rgb(144, 238, 144)', // Lacivert ve açık yeşil/turkuaz rengi
+    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)', // Lacivert ve açık yeşil/turkuaz rengi
+    color: 'black',
     padding: '10px', // 10px iç boşluk
     // Diğer stillendirme özellikleri buraya eklenebilir.
   };
   
   const playIcon = isPlaying ? (
-    <i className="material-icons">play_arrow</i>
+    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i>
   ) : (
-    <i className="material-icons">pause</i>
+    <i className="material-icons" style={{ color: 'white' }}>pause</i>
   );
-  
   
 
   const playButtonText = isPlaying ? 'Play' : 'Pause';
 
   return (
     <div className="return">
+      <Head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        {/* Diğer stil ve meta etiketlerini buraya ekleyebilirsiniz */}
+      </Head>
       <div>
         <button onClick={togglePlaying} style={playButtonStyle}>
           {playButtonText}

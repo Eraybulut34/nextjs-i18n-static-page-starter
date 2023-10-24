@@ -1,4 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
+import Head from 'next/head';
+
 
 const VideoComponent2 = () => {
   const videos = [
@@ -6,7 +8,7 @@ const VideoComponent2 = () => {
     '/images/video8.mp4',
     '/images/video9.mp4',
   ];
-   // eslint-disable-next-line
+  // eslint-disable-next-line
   const videoRefs = videos.map(() => useRef(null));
   const currentVideoIndexRef = useRef(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -55,22 +57,51 @@ const VideoComponent2 = () => {
     }
   };
 
+  // Düğmenin görünümünü oynatma durumuna göre özelleştirme
+  const playButtonStyle = {
+    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)', // Lacivert ve açık yeşil/turkuaz rengi
+    color: 'black',
+    padding: '10px', // 10px iç boşluk
+    // Diğer stillendirme özellikleri buraya eklenebilir.
+  };
+  
+  const playIcon = isPlaying ? (
+    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i>
+  ) : (
+    <i className="material-icons" style={{ color: 'white' }}>pause</i>
+  );
+  
+
+  const playButtonText = isPlaying ? 'Play' : 'Pause';
+
   return (
     <div className="return">
-    <div className="play" onClick={togglePlaying}>
-      {videoRefs.map((videoRef, index) => (
-        <video
-          key={index}
-          className="vdr"
-          width="35%"
-          height="auto"
-          ref={videoRef}
-        >
-          <source src={videos[index]} type="video/mp4" />
-          Tarayıcınız video etiketini desteklemiyor.
-        </video>
-      ))}
-    </div>
+      <Head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        {/* Diğer stil ve meta etiketlerini buraya ekleyebilirsiniz */}
+      </Head>
+      <div>
+        <button onClick={togglePlaying} style={playButtonStyle}>
+          {playButtonText}
+        </button>
+      </div>
+      <div className="play" onClick={togglePlaying}>
+        {videoRefs.map((videoRef, index) => (
+          <video
+            key={index}
+            className="vdr"
+            width="35%"
+            height="auto"
+            ref={videoRef}
+          >
+            <source src={videos[index]} type="video/mp4" />
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+        ))}
+      </div>
+
+      {/* Yeni eklenen düğme */}
+      
     </div>
   );
 };
