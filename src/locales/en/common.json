@@ -92,11 +92,9 @@
   "Scan": "It helps measure points within the scan to find true dimensions quickly.",
   "Cho": "Why choose Bimodel?",
   "Convert": "We convert point cloud data into information-rich BIM models from laser surveyed data images and point clouds.",
-  "Land": "Our team of licensed architects, professional land surveyors, and certified scan technicians deliver high-quality as-built surveys.",
   "Recreates": "Our point cloud data accurately recreates the as-built environment.",
   "Complete": "Our complete and accurate results enable the design team to make informed decisions quickly.",
   "By": "Our experienced professionals are adept at meeting clients’ expectations by capturing and interpreting the 3D scan data accurately.",
-  "Reduce": "Our improved build cost estimates reduce errors and thus achieve significant cost savings.",
   "Time": "We believe in being ‘on time, each time!",
   "Shop": "Meb Shop Drawing Services",
   "Hvac": "MEP Shop Drawing Services | HVAC, Electrical, Plumbing, Fire",
@@ -133,5 +131,8 @@
   "bmn": "BIM Modeling",
   "exp": "BIM Object Modeling",
   "cld": "Point Cloud Modeling",
-  "auto": "Design Automation"
+  "auto": "Design Automation",
+  "bld": "Building",
+  "sft": "Software",
+  "lnp": "Plan"
 }

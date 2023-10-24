@@ -58,13 +58,13 @@ function LangIndex({ language }) {
     </div>
     <div className="logos">
             <div className="logos-slide">
-            <div className="sogol"><Image src="/images/images2.png" alt="" width={100} height={100} /><p>Bim Modeling</p></div>
-            <div className="sogol"><Image src="/images/images8.png" alt="" width={100} height={100} /><p>Bim Object Modeling</p></div>
-            <div className="sogol"><Image src="/images/images5.png" alt="" width={100} height={100} /><p>Design Automation</p></div>
-            <div className="sogol"><Image src="/images/images4.png" alt="" width={100} height={100} /><p>Point Cloud Modeling</p></div>
-            <div className="sogol"><Image src="/images/images97.png" alt="" width={120} height={120} /><p>Building</p></div>
-            <div className="sogol"><Image src="/images/images94.png" alt="" width={120} height={120} /><p>Software</p></div>
-            <div className="sogol"><Image src="/images/images95.png" alt="" width={120} height={120} /><p>Plan</p></div>
+            <div className="sogol"><Image src="/images/images2.png" alt="" width={100} height={100} /><p>{t('bmn')}</p></div>
+            <div className="sogol"><Image src="/images/images8.png" alt="" width={100} height={100} /><p>{t('exp')}</p></div>
+            <div className="sogol"><Image src="/images/images5.png" alt="" width={100} height={100} /><p>{t('auto')}</p></div>
+            <div className="sogol"><Image src="/images/images4.png" alt="" width={100} height={100} /><p>{t('cld')}</p></div>
+            <div className="sogol"><Image src="/images/images97.png" alt="" width={120} height={120} /><p>{t('bld')}</p></div>
+            <div className="sogol"><Image src="/images/images94.png" alt="" width={120} height={120} /><p>{t('sft')}</p></div>
+            <div className="sogol"><Image src="/images/images95.png" alt="" width={120} height={120} /><p>{t('lnp')}</p></div>
             </div>
         </div>
     <div className="cont" id="scn">

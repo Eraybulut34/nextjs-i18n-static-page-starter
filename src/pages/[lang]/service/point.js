@@ -85,11 +85,9 @@ const Point = function ({ children }) {
               <h3>{t('Cho')}</h3>
                 <ul>
                   <li>{t('Convert')}</li>
-                  <li>{t('Land')}</li>
                   <li>{t('Recreates')}</li>
                   <li>{t('Complete')}</li>
                   <li>{t('By')}</li>
-                  <li>{t('Reduce')}</li>
                   <li>{t('Time')}</li>
                 </ul>
             </div>

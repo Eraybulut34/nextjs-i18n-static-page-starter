@@ -92,15 +92,13 @@
   "Scan": "Gerçek boyutları hızlı bir şekilde bulmak için tarama içindeki noktaların ölçülmesine yardımcı olur.",
   "Cho": "Neden Bimodel'i seçmelisiniz?",
   "Convert": "Nokta bulutu verilerini, lazerle incelenen veri görüntülerinden ve nokta bulutlarından bilgi açısından zengin BIM modellerine dönüştürüyoruz.",
-  "Land": "Lisanslı mimarlardan, profesyonel arazi araştırmacılarından ve sertifikalı tarama teknisyenlerinden oluşan ekibimiz, yüksek kalitede inşaat halinde incelemeler sunar.",
   "Recreates": "Nokta bulutu verilerimiz, oluşturulduğu ortamı doğru bir şekilde yeniden oluşturur.",
   "Complete": "Eksiksiz ve doğru sonuçlarımız tasarım ekibinin hızlı bir şekilde bilinçli kararlar almasını sağlar.",
-  "By": "Deneyimli profesyonellerimiz, 3D tarama verilerini doğru bir şekilde yakalayıp yorumlayarak müşterilerin beklentilerini karşılama konusunda ustadır.",
-  "Reduce": "Geliştirilmiş yapım maliyeti tahminlerimiz hataları azaltır ve böylece önemli maliyet tasarrufları sağlar.",
+  "By": "Deneyimli profesyonellerimiz, 3D tarama verilerini doğru bir şekilde yakalayıp yorumlayarak müşterilerin beklentilerini karşılar.",
   "Time": "Her seferinde zamanında olmaya inanıyoruz!",
   "Shop": "Meb Shop Çizim Hizmetleri",
   "Hvac": "MEP Mağaza Çizim Hizmetleri | HVAC, Elektrik, Sıhhi Tesisat, Yangın",
-  "Mech": "Mekanik, elektrik, sıhhi tesisat (MEP) koordineli imalat çizimi, tüm mimari, yapısal ve ticari imalat çizimlerinin entegre edilmesiyle inşaat projesinin birleşik 3 boyutlu görüntüsüdür. Kafes kirişler, asansörler, yapısal çelik, pencereler, dolaplar, aletler, değirmen işleri ve klima santralleri gibi prefabrik bileşenler için gerekli olan ve yüklenici, tedarikçi, imalatçı, imalatçı veya alt kuruluş tarafından üretilen bir çizim veya bir dizi çizim. -yüklenicilere imalat çizimleri denir.",
+  "Mech": "Mekanik, elektrik, sıhhi tesisat (MEP) koordineli imalat çizimi, tüm mimari, yapısal ve ticari imalat çizimlerinin entegre edilmesiyle inşaat projesinin birleşik 3 boyutlu görüntüsüdür. Kafes kirişler, asansörler, yapısal çelik, pencereler, dolaplar, aletler, değirmen işleri ve klima santralleri gibi prefabrik bileşenler için gerekli olan ve yüklenici, tedarikçi, imalatçı, imalatçı veya alt kuruluş tarafından üretilen bir çizim veya bir dizi çizim. yüklenicilere imalat çizimleri denir.",
   "Drawn": "MEP HVAC atölye çizimi, inşaat belgelerindeki bilgilerin çizilmiş versiyonudur. Boyutları, üretim standartlarını, imalatı içerir ve inşaat belgelerine kıyasla daha fazla ayrıntı içerir.",
   "An": "Belirli bir ürünü veya enstalasyonu vurgulayan bir MEP mağaza çizimi, mimarın çiziminden çok farklı bir tarza sahiptir.",
   "Areas": "Koordineli MEP imalat çizimleri, aşağıdaki gibi çeşitli alanlarda tasarım-inşa projeleri için destek sağlar:",
@@ -133,5 +131,8 @@
   "bmn": "BIM Model",
   "exp": "BIM Nesne Model",
   "cld": "Nokta Bulut Model",
-  "auto": "Tasarım Otomasyonu"
+  "auto": "Tasarım Otomasyonu",
+  "bld": "Yapı",
+  "sft": "Yazılım",
+  "lnp": "Plan"
 }
