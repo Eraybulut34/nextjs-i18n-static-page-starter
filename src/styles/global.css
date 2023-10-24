@@ -902,7 +902,7 @@ svg {
 
 .empty {
   text-align: center;
-  color: #fff;
+  color: #10182F;
   font-size: 2.5rem;
   
 }
@@ -912,12 +912,12 @@ svg {
 
 
 .return {
-  background: #10182F;
+  background: #fff;
   height: 50vh;
 }
 
 .play {
-  background: #10182F;
+  background: #fff;
   width: 95%;
   border-radius: 30px;
   height: 50vh;
