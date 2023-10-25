@@ -107,13 +107,13 @@ function LangIndex({ language }) {
     </div>
     
     <div className="video">
-      <h1 className="empty">Bım Modeling</h1>
+      <h1 className="empty">{t('bmn')}</h1>
     <VideoComponent />
-    <h1 className="empty">Object Modeling</h1>
+    <h1 className="empty">{t('exp')}</h1>
     <VideoComponent2 />
-    <h1 className="empty">Point Cloud Modeling</h1>
+    <h1 className="empty">{t('cld')}</h1>
     <VideoComponent3 />
-    <h1 className="empty">Design Automation</h1>
+    <h1 className="empty">{t('auto')}</h1>
     <VideoComponent4 />
     </div>
   </Layout>

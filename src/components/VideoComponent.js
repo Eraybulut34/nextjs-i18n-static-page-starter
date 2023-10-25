@@ -61,10 +61,10 @@ const VideoComponent = () => {
   };
   
   const playIcon = isPlaying ? (
-    <i className="material-icons" style={{ color: 'white' }}>pause</i> // Duraklatma simgesi
+    <i className="material-icons" style={{ color: 'black' }}>pause</i> // Duraklatma simgesi
   ) : (
-    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i> // Oynatma simgesi
-  )
+    <i className="material-icons" style={{ color: 'black' }}>play_arrow</i> // Oynatma simgesi
+  );
 
   const playButtonText = isPlaying ? 'Pause' : 'Play';
 
