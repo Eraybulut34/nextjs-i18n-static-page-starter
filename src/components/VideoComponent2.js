@@ -1,17 +1,16 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Head from 'next/head';
 
-
 const VideoComponent2 = () => {
   const videos = [
     '/images/video7.mp4',
     '/images/video8.mp4',
     '/images/video9.mp4',
   ];
-  // eslint-disable-next-line
+// eslint-disable-next-line
   const videoRefs = videos.map(() => useRef(null));
   const currentVideoIndexRef = useRef(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false); // Başlangıçta video oynatılmıyor.
 
   const handleVideoEnded = () => {
     currentVideoIndexRef.current = (currentVideoIndexRef.current + 1) % videos.length;
@@ -49,36 +48,30 @@ const VideoComponent2 = () => {
   const togglePlaying = () => {
     setIsPlaying(!isPlaying);
     if (videoRefs[currentVideoIndexRef.current].current) {
-      if (isPlaying) {
-        videoRefs[currentVideoIndexRef.current].current.pause();
-      } else {
+      if (!isPlaying) { // Eğer video oynatılmıyorsa, videoyu oynat
         videoRefs[currentVideoIndexRef.current].current.play();
       }
     }
   };
 
-  // Düğmenin görünümünü oynatma durumuna göre özelleştirme
   const playButtonStyle = {
-    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)', // Lacivert ve açık yeşil/turkuaz rengi
+    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)',
     color: 'black',
-    padding: '10px', // 10px iç boşluk
-    // Diğer stillendirme özellikleri buraya eklenebilir.
+    padding: '10px',
   };
   
   const playIcon = isPlaying ? (
-    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i>
+    <i className="material-icons" style={{ color: 'white' }}>pause</i> // Duraklatma simgesi
   ) : (
-    <i className="material-icons" style={{ color: 'white' }}>pause</i>
-  );
-  
+    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i> // Oynatma simgesi
+  )
 
-  const playButtonText = isPlaying ? 'Play' : 'Pause';
+  const playButtonText = isPlaying ? 'Pause' : 'Play';
 
   return (
-    <div className="return">
+    <>
       <Head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-        {/* Diğer stil ve meta etiketlerini buraya ekleyebilirsiniz */}
       </Head>
       <div>
         <button onClick={togglePlaying} style={playButtonStyle}>
@@ -99,10 +92,7 @@ const VideoComponent2 = () => {
           </video>
         ))}
       </div>
-
-      {/* Yeni eklenen düğme */}
-      
-    </div>
+    </>
   );
 };
 
