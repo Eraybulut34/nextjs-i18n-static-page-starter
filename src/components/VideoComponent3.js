@@ -55,9 +55,8 @@ const VideoComponent3 = () => {
   };
 
   const playButtonStyle = {
-    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)',
-    color: 'black',
-    padding: '10px',
+    backgroundColor: isPlaying ? 'gray' : 'rgb(16, 24, 47)',
+    padding: '5px',
   };
   
   const playIcon = isPlaying ? (
@@ -75,7 +74,7 @@ const VideoComponent3 = () => {
       </Head>
       <div>
         <button onClick={togglePlaying} style={playButtonStyle}>
-          {playButtonText}
+          {playIcon}
         </button>
       </div>
       <div className="play" onClick={togglePlaying}>

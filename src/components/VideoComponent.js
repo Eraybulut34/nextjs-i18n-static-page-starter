@@ -55,15 +55,15 @@ const VideoComponent = () => {
   };
 
   const playButtonStyle = {
-    backgroundColor: isPlaying ? 'gray' : 'rgb(144, 238, 144)',
-    color: 'black',
-    padding: '10px',
+    backgroundColor: isPlaying ? 'gray' : 'rgb(16, 24, 47)',
+    
+    padding: '5px',
   };
   
   const playIcon = isPlaying ? (
-    <i className="material-icons" style={{ color: 'black' }}>pause</i> // Duraklatma simgesi
+    <i className="material-icons" style={{ color: 'white' }}>pause</i> // Duraklatma simgesi
   ) : (
-    <i className="material-icons" style={{ color: 'black' }}>play_arrow</i> // Oynatma simgesi
+    <i className="material-icons" style={{ color: 'white' }}>play_arrow</i> // Oynatma simgesi
   );
 
   const playButtonText = isPlaying ? 'Pause' : 'Play';
@@ -75,7 +75,7 @@ const VideoComponent = () => {
       </Head>
       <div>
         <button onClick={togglePlaying} style={playButtonStyle}>
-          {playButtonText}
+          {playIcon}
         </button>
       </div>
       <div className="play" onClick={togglePlaying}>
